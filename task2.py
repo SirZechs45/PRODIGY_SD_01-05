@@ -19,12 +19,12 @@ def check_guess():
     except ValueError:
         result_label.config(text="Invalid input. Please enter a valid number.")
 
-# Main Tkinter window
+
 root = tk.Tk()
 root.title("Number Guessing Game")
-root.geometry("400x200")  # Set the initial width to 400
+root.geometry("400x200") 
 
-# GUI components
+
 label = tk.Label(root, text="Enter Your Guess:")
 label.pack(padx=5, pady=10)
 
@@ -37,5 +37,4 @@ guess_button.pack(pady=10)
 result_label = tk.Label(root, text="")
 result_label.pack(pady=10)
 
-# Run the Tkinter event loop
 root.mainloop()
